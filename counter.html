@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Counter</title>
+</head>
+<body>
+	<h1 class="container">COUNTER</h1>
+
+	<div>
+	    <button onclick="add_number()">+</button>
+	    <h2 id="result"></h2>
+	    <button onclick="delete_number()">-</button>
+	</div>
+
+	<script type="text/javascript">
+
+		var number = 0;
+		document.getElementById("result").innerText = number;
+
+		function add_number(){
+			number += 1; 
+			document.getElementById("result").innerText = number;
+		}
+		function delete_number(){
+		    number -= 1; 
+			document.getElementById("result").innerText = number;	
+		}
+	</script>
+</body>
+</html>
